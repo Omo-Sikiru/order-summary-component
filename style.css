@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*------------ COLORS ----------- */
+  --clr-pry-01: hsl(225, 100%, 94%);
+  --clr-pry-02: hsl(245, 75%, 52%);
+  --clr-neu-01: hsl(225, 100%, 98%);
+  --clr-neu-02: hsl(224, 23%, 55%);
+  --clr-neu-03: hsl(223, 47%, 23%);
+
+  /*------------ TOPOGRAPHY ----------- */
+  --ff-pry: "Red Hat Display", sans-serif;
+
+  --fs-00: 14px;
+  --fs-01: 16px;
+
+  /*------------ CUSTOMS ----------- */
+
+  /* Mobile: 375px
+- Desktop: 1440px */
+}
+
+/* ------------- Resets 02 -------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+img,
+picture,
+video,
+iframe {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a,
+ul,
+ol {
+  text-decoration: none;
+  list-style: none;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+/* ------------ GENERAL STYLES -------------- */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  font-family: var(--ff-pry);
+  font-size: var(--fs-00);
+  line-height: 1.5;
+  color: var(--clr-neu-02);
+  background-color: var(--clr-pry-01);
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  color: var(--clr-neu-03);
+  font-weight: 900;
+}
+
+/* ----------- Main Section ---------- */
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 1.5rem;
+  /* background-color: var(--clr-pry-01); */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 375px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--clr-neu-01);
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.card-heading {
+  margin-bottom: 1rem;
+}
+
+.card-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.card-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: var(--clr-pry-01);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-block-end: 1.5rem;
+}
+
+.plan-details p:first-child {
+  color: var(--clr-neu-03);
+  font-weight: 900;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-block: 0.3rem;
+  font-weight: 900;
+}
+
+.submit-btn {
+  background: var(--clr-pry-02);
+  color: var(--clr-neu-01);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: hsl(241, 76%, 48%);
+}
+
+.cancel-btn {
+  background: var(--clr-neu-01);
+  color: var(--clr-neu-02);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
